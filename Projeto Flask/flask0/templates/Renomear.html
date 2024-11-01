@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/Criar.css') }}">
+    <title>Renomear Jogos</title>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Mundo dos Jogos</h1>
+        <nav>
+            <ul>
+                <li><a href="/Adicionar">Adicionar</a></li>
+                <li><a href="/Renomear">Renomear</a></li>
+                <li><a href="/Apagar">Apagar</a></li>
+                <li><a href="/">Jogos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured-games">
+            <h2>Renomear Jogos</h2>
+            <br>
+            <form action="/Alterar" method="post">
+                <input type="text" name="VelhoNome" placeholder="Nome atual" required>
+                <input type="text" name="NovoNome" placeholder="Novo nome" required>
+                <input type="submit" value="Alterar">
+                </form>
+        </section>
+    </main>
+</body>
+</html>
